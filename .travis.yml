@@ -1,10 +1,6 @@
 language: php
 php:
-  - '7.0'
   - '7.1'
-env:
-  - DB=sqlite
-  - DB=mysql
 script:
    - composer install
    - php bin/console doctrine:database:create --env=test
